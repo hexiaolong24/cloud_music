@@ -1,6 +1,12 @@
 import styled from "styled-components";
 import style from "../../assets/global-style";
 
+/**
+ * top: -1000px;
+   height: 1100px;
+   差100是因为需要100的高度
+   top尽可能大（能够超过下滑最大距离就可以）
+ */
 export const SliderContainer = styled.div`
   position: relative;
   box-sizing: border-box;
@@ -10,8 +16,8 @@ export const SliderContainer = styled.div`
   background: white;
   .before {
     position: absolute;
-    top: 0;
-    height: 60%;
+    top: -1000px;
+    height: 1100px;
     width: 100%;
     background: ${style["theme-color"]};
   }
