@@ -25,8 +25,6 @@ export function useTasksDispatch() {
 }
 
 function tasksReducer(tasks, action) {
-  console.log("tasks====", tasks);
-  console.log("action====", action);
   switch (action.type) {
     case "added": {
       return [
